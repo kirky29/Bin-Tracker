@@ -43,7 +43,7 @@ export const binCollections: BinCollection[] = [
 
   // September 2025
   { date: '2025-09-04', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
-  { date: '2025-09-11', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
+  { date: '2025-09-11', type: 'recycling', displayName: 'Recycling (Blue Bin)', color: '#2563eb' },
   { date: '2025-09-18', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
   { date: '2025-09-25', type: 'paper', displayName: 'Cardboard (Purple Bin)', color: '#7c3aed' },
 
