@@ -148,6 +148,7 @@ a {
 .calendar-day {
   aspect-ratio: 1;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 0.5rem;
@@ -156,10 +157,25 @@ a {
   cursor: pointer;
   position: relative;
   min-height: 48px;
+  padding: 0.25rem;
 }
 
 .calendar-day:hover {
   transform: scale(1.05);
+}
+
+/* Ensure text is white on colored calendar days */
+.calendar-day.bin-domestic,
+.calendar-day.bin-recycling,
+.calendar-day.bin-paper,
+.calendar-day.bin-no-collection {
+  color: white;
+}
+
+/* Default styling for empty days */
+.calendar-day.bg-gray-100 {
+  color: #6b7280;
+  background-color: #f3f4f6;
 }
 
 .calendar-header {
