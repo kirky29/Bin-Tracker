@@ -29,11 +29,11 @@ export const binCollections: BinCollection[] = [
   { date: '2025-06-26', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
 
   // July 2025
-  { date: '2025-07-03', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
+  { date: '2025-07-03', type: 'paper', displayName: 'Cardboard (Purple Bin)', color: '#7c3aed' },
   { date: '2025-07-10', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
-  { date: '2025-07-17', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
+  { date: '2025-07-17', type: 'recycling', displayName: 'Recycling (Blue Bin)', color: '#2563eb' },
   { date: '2025-07-24', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
-  { date: '2025-07-31', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
+  { date: '2025-07-31', type: 'paper', displayName: 'Cardboard (Purple Bin)', color: '#7c3aed' },
 
   // August 2025
   { date: '2025-08-07', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
