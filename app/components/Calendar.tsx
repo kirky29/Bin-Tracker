@@ -110,15 +110,15 @@ export default function Calendar() {
       <div className="mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
         <div className="flex items-center space-x-2">
           <div className="w-4 h-4 rounded bin-domestic"></div>
-          <span>Domestic Waste</span>
+          <span>General Waste (Black)</span>
         </div>
         <div className="flex items-center space-x-2">
           <div className="w-4 h-4 rounded bin-recycling"></div>
-          <span>Recycling</span>
+          <span>Recycling (Blue)</span>
         </div>
         <div className="flex items-center space-x-2">
           <div className="w-4 h-4 rounded bin-paper"></div>
-          <span>Paper & Card</span>
+          <span>Cardboard (Purple)</span>
         </div>
         <div className="flex items-center space-x-2">
           <div className="w-4 h-4 rounded bin-no-collection"></div>

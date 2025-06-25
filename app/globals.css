@@ -70,25 +70,29 @@ a {
   box-shadow: 0 8px 16px -1px rgba(0, 0, 0, 0.15);
 }
 
-/* Bin Type Colors */
+/* Bin Type Colors - Updated to match actual bin colors */
 .bin-domestic {
-  background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+  background: linear-gradient(135deg, #1f1f1f 0%, #000000 100%);
   color: white;
+  border: 2px solid #333;
 }
 
 .bin-recycling {
-  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
   color: white;
+  border: 2px solid #1e40af;
 }
 
 .bin-paper {
-  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
   color: white;
+  border: 2px solid #5b21b6;
 }
 
 .bin-no-collection {
-  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
   color: white;
+  border: 2px solid #991b1b;
 }
 
 /* Responsive Design */
@@ -167,6 +171,39 @@ a {
   border-radius: 0.5rem;
 }
 
+/* Hero Next Collection Styling */
+.next-collection {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.2);
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 16px 32px -4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* Bin Type Specific Hero Styling */
+.bin-domestic.next-collection {
+  box-shadow: 0 12px 24px -4px rgba(31, 31, 31, 0.4);
+}
+
+.bin-recycling.next-collection {
+  box-shadow: 0 12px 24px -4px rgba(37, 99, 235, 0.4);
+}
+
+.bin-paper.next-collection {
+  box-shadow: 0 12px 24px -4px rgba(124, 58, 237, 0.4);
+}
+
+.bin-no-collection.next-collection {
+  box-shadow: 0 12px 24px -4px rgba(220, 38, 38, 0.4);
+}
+
 /* Mobile optimizations */
 @media (max-width: 639px) {
   .calendar-day {
@@ -182,5 +219,9 @@ a {
   .btn {
     padding: 0.625rem 1.25rem;
     font-size: 0.875rem;
+  }
+
+  .next-collection {
+    transform: scale(1.01);
   }
 } 
