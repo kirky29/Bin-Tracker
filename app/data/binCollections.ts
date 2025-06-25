@@ -11,22 +11,21 @@ export interface BinCollection {
 export const binCollections: BinCollection[] = [
   // April 2025
   { date: '2025-04-03', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
-  { date: '2025-04-08', type: 'recycling', displayName: 'Recycling (Blue Bin)', color: '#2563eb' },
-  { date: '2025-04-10', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
+  { date: '2025-04-10', type: 'paper', displayName: 'Cardboard (Purple Bin)', color: '#7c3aed' },
   { date: '2025-04-17', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
-  { date: '2025-04-24', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
+  { date: '2025-04-24', type: 'recycling', displayName: 'Recycling (Blue Bin)', color: '#2563eb' },
 
   // May 2025
-  { date: '2025-05-01', type: 'recycling', displayName: 'Recycling (Blue Bin)', color: '#2563eb' },
-  { date: '2025-05-08', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
+  { date: '2025-05-01', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
+  { date: '2025-05-08', type: 'paper', displayName: 'Cardboard (Purple Bin)', color: '#7c3aed' },
   { date: '2025-05-15', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
-  { date: '2025-05-22', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
+  { date: '2025-05-22', type: 'recycling', displayName: 'Recycling (Blue Bin)', color: '#2563eb' },
   { date: '2025-05-29', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
 
   // June 2025
-  { date: '2025-06-05', type: 'paper', displayName: 'Cardboard (Purple Bin)', color: '#7c3aed' },
+  { date: '2025-06-05', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
   { date: '2025-06-12', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
-  { date: '2025-06-19', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
+  { date: '2025-06-19', type: 'recycling', displayName: 'Recycling (Blue Bin)', color: '#2563eb' },
   { date: '2025-06-26', type: 'domestic', displayName: 'General Waste (Black Bin)', color: '#000000' },
 
   // July 2025

@@ -63,10 +63,10 @@ export default function Calendar() {
         >
           <span className={isToday ? 'font-bold' : ''}>{day}</span>
           {collection && (
-            <div className="text-xs mt-1 opacity-90">
-              {collection.type === 'domestic' ? 'DW' : 
-               collection.type === 'recycling' ? 'REC' :
-               collection.type === 'paper' ? 'P&C' : 'NO'}
+            <div className="text-xs mt-1 opacity-90 font-semibold">
+              {collection.type === 'domestic' ? 'BLACK' : 
+               collection.type === 'recycling' ? 'BLUE' :
+               collection.type === 'paper' ? 'PURPLE' : 'NONE'}
             </div>
           )}
         </div>

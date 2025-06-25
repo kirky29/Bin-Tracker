@@ -45,21 +45,27 @@ export default function BinCard({ collection, isNext = false }: BinCardProps) {
   };
 
   return (
-    <div className={`card ${binTypeClass} ${isNext ? 'next-collection' : ''}`}>
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center space-x-3">
-          <span className="text-2xl">{getIcon(collection.type)}</span>
-          <div>
-            <h3 className="text-lg font-semibold">{collection.displayName}</h3>
-            <p className="text-sm opacity-90">{formatDate(collection.date)}</p>
+    <div className={`card ${binTypeClass} ${isNext ? 'next-collection relative z-10' : ''}`}>
+      <div className="flex items-center justify-between">
+        <div className="flex items-center space-x-4">
+          <div className="flex-shrink-0">
+            <span className="text-3xl">{getIcon(collection.type)}</span>
+          </div>
+          <div className="min-w-0 flex-1">
+            <h3 className={`font-semibold ${isNext ? 'text-lg' : 'text-base'} truncate`}>
+              {collection.displayName}
+            </h3>
+            <p className={`text-sm opacity-90 ${isNext ? 'mt-1' : ''}`}>
+              {formatDate(collection.date)}
+            </p>
           </div>
         </div>
         {isNext && (
-          <div className="text-right">
-            <div className="text-2xl font-bold">
+          <div className="text-right flex-shrink-0 ml-4">
+            <div className="text-2xl font-bold leading-tight">
               {daysUntil === 0 ? 'Today!' : daysUntil === 1 ? 'Tomorrow' : `${daysUntil} days`}
             </div>
-            <div className="text-sm opacity-90">
+            <div className="text-xs opacity-90 mt-1">
               {daysUntil === 0 ? 'Collection day' : 'until collection'}
             </div>
           </div>
@@ -67,10 +73,10 @@ export default function BinCard({ collection, isNext = false }: BinCardProps) {
       </div>
       
       {isNext && (
-        <div className="border-t border-white/20 pt-4 mt-4">
-          <div className="flex items-center space-x-2 text-sm opacity-90">
+        <div className="mt-4 pt-4 border-t border-white/20">
+          <div className="flex items-center justify-center space-x-2 text-sm opacity-95 bg-black/10 rounded-lg py-2 px-3">
             <span>⏰</span>
-            <span>Remember: Bins out by 5:30 AM</span>
+            <span className="font-medium">Bins out by 5:30 AM</span>
           </div>
         </div>
       )}
